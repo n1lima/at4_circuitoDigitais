@@ -1,16 +1,16 @@
 `timescale 1ns/1ns
-`include "somadorCompleto.v"
+`include "subtratorCompleto.v"
 
-module somadorCompleto_tb;
+module subtratorCompleto_tb;
 
     reg a,b, c_in;
     wire c_out,s;
 
-    somadorCompleto uut(a, b, c_in, c_out, s);
+    subtratorCompleto uut(a, b, c_in, c_out, s);
 
     initial begin
-        $dumpfile("somadorCompleto_tb.vcd");
-        $dumpvars(0, somadorCompleto_tb);
+        $dumpfile("subtratorCompleto_tb.vcd");
+        $dumpvars(0, subtratorCompleto_tb);
 
         a = 0;
         b = 0; 
