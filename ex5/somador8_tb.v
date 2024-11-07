@@ -5,7 +5,6 @@ module somador8_tb;
 
     reg [7:0] a,b;
     wire [8:0] s;
-    wire [6:0] c;
 
     somador8 uut(a, b, s);
 
